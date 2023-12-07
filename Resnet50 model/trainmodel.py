@@ -80,15 +80,15 @@ for epoch in range(10):
             # callbacks=[checkpoint]
         )
 
-loss, accuracy = model.evaluate(test_generator)
-print(f"Test loss: {loss:.4f}")
-print(f"Test accuracy: {accuracy * 100:.2f}%")
+#loss, accuracy = model.evaluate(test_generator)
+#print(f"Test loss: {loss:.4f}")
+#print(f"Test accuracy: {accuracy * 100:.2f}%")
 
 
-resnet_loss, resnet_accuracy = model.evaluate(test_generator)
+#resnet_loss, resnet_accuracy = model.evaluate(test_generator)
 
-print("\nResNet Model:")
-print(f"Test loss: {resnet_loss:.4f}")
-print(f"Test accuracy: {resnet_accuracy * 100:.2f}%")
+#print("\nResNet Model:")
+#print(f"Test loss: {resnet_loss:.4f}")
+#print(f"Test accuracy: {resnet_accuracy * 100:.2f}%")
 
 model.save('ResNet Model.h5')
